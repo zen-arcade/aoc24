@@ -46,7 +46,7 @@ int main(void){
                 count++;
             }
         }
-        similarity += list_1[j] * count;
+        similarity += list_1[j] * count;    
     }
 
     printf("list similarity: %ld\n", similarity);
