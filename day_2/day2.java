@@ -9,6 +9,7 @@ import java.util.List;
 public class day2 {
     public static void main(String[] args) throws Exception{
         int safe = 0;
+        int tolerated = 0;
         String line = "";
         List<String> vals;
         ArrayList<Report> reports = new ArrayList<>();
@@ -21,8 +22,12 @@ public class day2 {
 
         for(Report r : reports){
             if(r.isSafe()) safe++;
+            if(r.isTolerated()) tolerated++;
         }
-        
+
         System.out.println("number of safe reports: " + safe);
+        System.out.println("number of tolerated reports: " + tolerated);
+
+        br.close();
     }
 }
