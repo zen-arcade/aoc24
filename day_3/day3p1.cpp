@@ -18,7 +18,6 @@ int main(){
 
     while(rit != rend){
         sscanf(rit->str().c_str(),"mul(%d,%d)", &a, &b);
-        std::cout << rit->str() << "\n";
         mult_sum += a * b;
         rit++;
     }
